@@ -1,25 +1,49 @@
+:root {
+  --primary-color-normal: #820AD1;
+  --primary-color-hovered: #490B75;
+  --secondary-color: #222;
+  --light-color: #f0f0f0;
+  --white-color: #fff;
+  --black-color: #000;
+  --gray-color: #888;
+  --border-color: #f0f0f0;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--light-color);
+  color: var(--secondary-color);
+}
+
 .header {
   min-height: 72px;
-  border-bottom: 1px solid #f0f0f0;
-  background: #fff;
+  border-bottom: 1px solid var(--border-color);
+  background: var(--white-color);
 }
 .logo-text {
-  color: #a259e9;
+  color: var(--primary-color-normal);
 }
 .logo-tech {
-  color: #222;
+  color: var(--secondary-color);
 }
 .notification-btn {
-  color: #222;
+  color: var(--primary-color-normal);
   font-size: 1.5rem;
 }
 .notification-btn:hover {
-  color: #a259e9;
+  color: var(--primary-color-hovered);
 }
 .user-avatar {
-  border: 2px solid #eee;
+  border: 2px solid var(--border-color);
 }
 .user-name {
-  color: #222;
+  color: var(--secondary-color);
   font-size: 1rem;
+}
+.user-info:focus,
+.user-info:active {
+  outline: none;
+  box-shadow: none;
+  border: none;
 }
