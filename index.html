@@ -11,20 +11,11 @@
       integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -40,7 +31,7 @@
         <div class="dropdown d-none d-md-block">
           <button class="btn d-flex align-items-center user-info p-0" type="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
             <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Avatar do usuário" class="rounded-circle user-avatar me-2" width="44" height="44">
-            <span class="user-name fw-medium">Fagner Lopes</span>
+            <span class="user-name fw-normal">Fagner Lopes</span>
             <i class="ri-arrow-down-s-line ms-1"></i>
           </button>
           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
@@ -131,7 +122,158 @@
               </div>
             </div>
           </section>
-          <!-- Conteúdo principal será inserido aqui -->
+          <!-- Card de listagem de transações -->
+          <section class="transactions-list-section">
+            <div class="card shadow-sm border-0">
+              <div class="card-body p-4">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <h3 class="h6 fw-semibold mb-0">Transações recentes</h3>
+                  <button class="btn btn-link p-0 text-secondary" aria-label="Filtrar">
+                    <i class="ri-filter-3-line fs-5"></i>
+                  </button>
+                </div>
+                <ul class="list-unstyled mb-0 transactions-list">
+                  <li class="transaction-item d-flex align-items-center justify-content-between py-2 px-2 rounded-3 mb-1 bg-light-income">
+                    <div class="d-flex flex-column gap-1">
+                      <div class="d-flex align-items-center gap-2">
+                        <span class="transaction-icon bg-income text-white d-flex align-items-center justify-content-center">
+                          <i class="ri-arrow-up-line"></i>
+                        </span>
+                        <div class="d-flex flex-column gap-2">
+                          <div class="transaction-title">Salário - LWSA</div>
+                          <span class="badge bg-income-light text-income">Fixa mensal</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text-end d-flex flex-column gap-2 align-items-end">
+                      <div class="transaction-date text-muted small">05 de abril</div>
+                      <div class="transaction-value">+ R$ 10.280,00</div>
+                    </div>
+                  </li>
+                  <li class="transaction-item d-flex align-items-center justify-content-between py-2 px-2 rounded-3 mb-1 bg-light-expense">
+                    <div class="d-flex align-items-center gap-2">
+                      <span class="transaction-icon bg-expense text-white d-flex align-items-center justify-content-center">
+                        <i class="ri-arrow-down-line"></i>
+                      </span>
+                      <div class="d-flex flex-column gap-2">
+                        <div class="transaction-title">Aluguel</div>
+                        <span class="badge bg-expense-light text-expense fw-normal">Moradia</span>
+                      </div>
+                    </div>
+                    <div class="text-end">
+                      <div class="transaction-date text-muted small">10 de abril</div>
+                      <div class="transaction-value">- R$ 1.500,00</div>
+                    </div>
+                  </li>
+                  <li class="transaction-item d-flex align-items-center justify-content-between py-2 px-2 rounded-3 mb-1 bg-light-expense">
+                    <div class="d-flex align-items-center gap-2">
+                      <span class="transaction-icon bg-expense text-white d-flex align-items-center justify-content-center">
+                        <i class="ri-arrow-down-line"></i>
+                      </span>
+                      <div class="d-flex flex-column gap-2">
+                        <div class="transaction-title">Supermercado</div>
+                        <span class="badge bg-market-light text-market fw-normal">Mercado</span>
+                      </div>
+                    </div>
+                    <div class="text-end">
+                      <div class="transaction-date text-muted small">12 de abril</div>
+                      <div class="transaction-value">- R$ 650,00</div>
+                    </div>
+                  </li>
+                  <li class="transaction-item d-flex align-items-center justify-content-between py-2 px-2 rounded-3 mb-1 bg-light-expense">
+                    <div class="d-flex align-items-center gap-2">
+                      <span class="transaction-icon bg-expense text-white d-flex align-items-center justify-content-center">
+                        <i class="ri-arrow-down-line"></i>
+                      </span>
+                      <div class="d-flex flex-column gap-2">
+                        <div class="transaction-title">IPVA - 4 de 6</div>
+                        <span class="badge bg-tax-light text-tax fw-normal">Impostos</span>
+                      </div>
+                    </div>
+                    <div class="text-end">
+                      <div class="transaction-date text-muted small">15 de abril</div>
+                      <div class="transaction-value">- R$ 650,00</div>
+                    </div>
+                  </li>
+                  <li class="transaction-item d-flex align-items-center justify-content-between py-2 px-2 rounded-3 mb-1 bg-light-expense">
+                    <div class="d-flex align-items-center gap-2">
+                      <span class="transaction-icon bg-expense text-white d-flex align-items-center justify-content-center">
+                        <i class="ri-arrow-down-line"></i>
+                      </span>
+                      <div class="d-flex flex-column gap-2">
+                        <div class="transaction-title">Supermercado</div>
+                        <span class="badge bg-market-light text-market fw-normal">Mercado</span>
+                      </div>
+                    </div>
+                    <div class="text-end">
+                      <div class="transaction-date text-muted small">16 de abril</div>
+                      <div class="transaction-value">- R$ 250,00</div>
+                    </div>
+                  </li>
+                  <li class="transaction-item d-flex align-items-center justify-content-between py-2 px-2 rounded-3 mb-1 bg-light-income">
+                    <div class="d-flex align-items-center gap-2">
+                      <span class="transaction-icon bg-income text-white d-flex align-items-center justify-content-center">
+                        <i class="ri-arrow-up-line"></i>
+                      </span>
+                      <div class="d-flex flex-column gap-2">
+                        <div class="transaction-title">Freelancer - Agência Duo</div>
+                        <span class="badge bg-income-light text-income fw-normal">Fixa mensal</span>
+                      </div>
+                    </div>
+                    <div class="text-end">
+                      <div class="transaction-date text-muted small">20 de abril</div>
+                      <div class="transaction-value">+ R$ 4.500,00</div>
+                    </div>
+                  </li>
+                  <li class="transaction-item d-flex align-items-center justify-content-between py-2 px-2 rounded-3 mb-1 bg-light-expense">
+                    <div class="d-flex align-items-center gap-2">
+                      <span class="transaction-icon bg-expense text-white d-flex align-items-center justify-content-center">
+                        <i class="ri-arrow-down-line"></i>
+                      </span>
+                      <div class="d-flex flex-column gap-2">
+                        <div class="transaction-title">Jogo de padel - Arena</div>
+                        <span class="badge bg-leisure-light text-leisure fw-normal">Lazer</span>
+                      </div>
+                    </div>
+                    <div class="text-end">
+                      <div class="transaction-date text-muted small">23 de abril</div>
+                      <div class="transaction-value">- R$ 20,00</div>
+                    </div>
+                  </li>
+                  <li class="transaction-item d-flex align-items-center justify-content-between py-2 px-2 rounded-3 mb-1 bg-light-expense">
+                    <div class="d-flex align-items-center gap-2">
+                      <span class="transaction-icon bg-expense text-white d-flex align-items-center justify-content-center">
+                        <i class="ri-arrow-down-line"></i>
+                      </span>
+                      <div class="d-flex flex-column gap-2">
+                        <div class="transaction-title">Cachorro quente do Bigode</div>
+                        <span class="badge bg-food-light text-food fw-normal">Alimentação</span>
+                      </div>
+                    </div>
+                    <div class="text-end">
+                      <div class="transaction-date text-muted small">23 de abril</div>
+                      <div class="transaction-value">- R$ 20,00</div>
+                    </div>
+                  </li>
+                  <li class="transaction-item d-flex align-items-center justify-content-between py-2 px-2 rounded-3 mb-1 bg-light-income">
+                    <div class="d-flex align-items-center gap-2">
+                      <span class="transaction-icon bg-income text-white d-flex align-items-center justify-content-center">
+                        <i class="ri-arrow-up-line"></i>
+                      </span>
+                      <div class="d-flex flex-column gap-2">
+                        <div class="transaction-title">Juros Itaú 100% CDI</div>
+                        <span class="badge bg-earning-light text-earning fw-normal">Rendimentos</span>
+                      </div>
+                    </div>
+                    <div class="text-end">
+                      <div class="transaction-date text-muted small">24 de abril</div>
+                      <div class="transaction-value">+ R$ 4.500,00</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
         </main>
       </div>
     </div>

@@ -5,13 +5,13 @@
   --light-color: #f0f0f0;
   --white-color: #fff;
   --black-color: #000;
-  --gray-color: #888;
+  --gray-color: #cacaca;
   --border-color: #f0f0f0;
   --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   background-color: var(--light-color);
   color: var(--secondary-color);
 }
@@ -87,7 +87,7 @@ body {
 
 .sidebar-link {
   color: var(--secondary-color);
-  font-weight: 500;
+  font-weight: 400;
   border-radius: 8px;
   padding: 0.5rem 0.75rem;
   transition: background 0.2s, color 0.2s;
@@ -115,14 +115,6 @@ body {
 .main-content {
   background: transparent;
   min-height: 80vh;
-}
-
-@media (max-width: 991.98px) {
-  .sidebar {
-    min-width: 160px;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
 }
 
 .bottom-menu {
@@ -170,11 +162,6 @@ body {
   font-size: 0.75rem;
   margin-top: 2px;
 }
-@media (min-width: 768px) {
-  .bottom-menu {
-    display: none !important;
-  }
-}
 
 .page-header .card {
   border-radius: 16px;
@@ -189,9 +176,11 @@ body {
 .page-header .breadcrumb-item a {
   color: var(--primary-color-normal);
   text-decoration: none;
+  font-family: 'Archivo', sans-serif !important;
 }
 .page-header .breadcrumb-item.active {
   color: var(--gray-color);
+  font-family: 'Archivo', sans-serif !important;
 }
 .page-desc {
   display: block;
@@ -217,4 +206,125 @@ body {
   color: var(--primary-color-normal);
   font-weight: 500;
   text-decoration: none;
+}
+
+.transactions-list-section .card {
+  border-radius: 16px;
+  background: var(--white-color);
+}
+.transactions-list {
+  margin: 0;
+  padding: 0;
+}
+.transaction-item {
+  background: var(--light-color);
+  transition: background 0.2s;
+  cursor: pointer;
+}
+.transaction-item:hover {
+  background: #f8f4ff;
+}
+.transaction-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-size: 1.05rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.transaction-icon i {
+  font-size: 1.1rem;
+}
+.bg-income { background: #4cd964 !important; }
+.bg-expense { background: #ff4d4f !important; }
+.bg-income-light { background: #c6f3c6 !important; }
+.bg-expense-light { background: #ffd1d1 !important; }
+.bg-market-light { background: #b3d4fc !important; }
+.bg-tax-light { background: #ffe0b3 !important; }
+.bg-leisure-light { background: #fff0b3 !important; }
+.bg-food-light { background: #ffb3d1 !important; }
+.bg-earning-light { background: #b3ffe6 !important; }
+.text-income { color: #4cd964 !important; }
+.text-expense { color: #ff4d4f !important; }
+.text-market { color: #3b82f6 !important; }
+.text-tax { color: #ff9900 !important; }
+.text-leisure { color: #f6c700 !important; }
+.text-food { color: #ff4d9d !important; }
+.text-earning { color: #00b894 !important; }
+.transaction-title {
+  font-size: .8rem;
+}
+.transaction-date,
+.transaction-value,
+.transaction-title,
+.badge {
+  font-weight: 400 !important;
+}
+.badge {
+  font-size: 0.75rem;
+  border-radius: 6px;
+  padding: 0.35em 0.7em;
+  font-weight: 500;
+  color: #222 !important;
+}
+
+@media (max-width: 992px) {
+  .sidebar {
+    min-width: 160px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .transaction-title {
+    font-size: 0.95rem;
+  }
+  .transaction-icon {
+    width: 22px;
+    height: 22px;
+    font-size: 0.95rem;
+  }
+  .transaction-icon i {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .bottom-menu {
+    display: none !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .transactions-list-section .card-body {
+    padding: 1rem !important;
+  }
+  .transaction-title {
+    font-size: 0.85rem;
+  }
+  .transaction-icon {
+    width: 22px;
+    height: 22px;
+    font-size: 0.9rem;
+  }
+  .transaction-icon i {
+    font-size: 1rem;
+  }
+
+  .transaction-date {
+    font-size: 0.8rem;
+  }
+  .transaction-value {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .main-content {
+    padding-bottom: 80px !important;
+  }
+}
+
+.sidebar, .sidebar-link, .bottom-menu, .bottom-menu-item, .menu-label {
+  font-family: 'Archivo', sans-serif !important;
 }
