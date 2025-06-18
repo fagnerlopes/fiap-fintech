@@ -175,3 +175,55 @@ body {
     display: none !important;
   }
 }
+
+.page-header .card {
+  border-radius: 16px;
+  background: var(--white-color);
+}
+.page-header .breadcrumb {
+  background: transparent;
+  padding: 0;
+  margin-bottom: 0.25rem;
+  font-size: 0.95rem;
+}
+.page-header .breadcrumb-item a {
+  color: var(--primary-color-normal);
+  text-decoration: none;
+}
+.page-header .breadcrumb-item.active {
+  color: var(--gray-color);
+}
+.page-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+.page-title i {
+  color: var(--primary-color-normal);
+  font-size: 1.3em;
+}
+.page-desc {
+  display: block;
+  margin-top: 2px;
+}
+
+.breadcrumb-separator {
+  color: var(--gray-color);
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  padding-bottom: 2px;
+}
+.breadcrumb .ri-dashboard-line {
+  color: var(--primary-color-normal);
+  font-size: 1.1em;
+}
+.breadcrumb .breadcrumb-item.active {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+.breadcrumb .breadcrumb-item a {
+  color: var(--primary-color-normal);
+  font-weight: 500;
+  text-decoration: none;
+}
