@@ -47,3 +47,33 @@ body {
   box-shadow: none;
   border: none;
 }
+
+.hamburger-btn {
+  color: var(--primary-color-normal);
+  font-size: 2rem;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  outline: none;
+  transition: color 0.2s;
+}
+.hamburger-btn:focus,
+.hamburger-btn:active {
+  color: var(--primary-color-hovered);
+  outline: none;
+  box-shadow: none;
+}
+
+.dropdown-user-info {
+  min-width: 160px;
+}
+.dropdown-user-info .user-avatar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.dropdown-user-info .user-name {
+  font-size: 1rem;
+  color: var(--secondary-color);
+  margin-top: 0.25rem;
+}
