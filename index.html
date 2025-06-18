@@ -41,23 +41,27 @@
             <li><a class="dropdown-item" href="#">Logout</a></li>
           </ul>
         </div>
-        <!-- Dropdown mobile -->
-        <div class="dropdown d-md-none">
-          <button class="btn p-0 hamburger-btn" type="button" id="mobileMenuDropdown" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Menu">
-            <i class="ri-menu-line fs-2"></i>
-          </button>
-          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="mobileMenuDropdown">
-            <li class="dropdown-user-info text-center py-2">
-              <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Avatar do usuário" class="rounded-circle user-avatar mb-1" width="44" height="44">
-              <div class="user-name fw-medium">Fagner Lopes</div>
-            </li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Perfil</a></li>
-            <li><a class="dropdown-item" href="#">Preferências</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Logout</a></li>
+        <!-- Drawer mobile -->
+        <input type="checkbox" id="drawer-toggle" class="drawer-toggle d-none" />
+        <label for="drawer-toggle" class="btn p-0 hamburger-btn d-md-none" aria-label="Menu">
+          <i class="ri-menu-line fs-2"></i>
+        </label>
+        <div class="drawer-overlay d-md-none"></div>
+        <aside class="drawer-menu d-md-none">
+          <div class="drawer-header text-center py-4 position-relative">
+            <label for="drawer-toggle" class="drawer-close position-absolute top-0 end-0 m-3" aria-label="Fechar menu">
+              <i class="ri-close-line fs-3"></i>
+            </label>
+            <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Avatar do usuário" class="rounded-circle user-avatar mb-2" width="56" height="56">
+            <div class="user-name fw-medium">Fagner Lopes</div>
+          </div>
+          <ul class="list-unstyled mb-0 px-3">
+            <li><a class="drawer-link" href="#">Perfil</a></li>
+            <li><a class="drawer-link" href="#">Preferências</a></li>
+            <li><hr></li>
+            <li><a class="drawer-link" href="#">Logout</a></li>
           </ul>
-        </div>
+        </aside>
       </div>
     </header>
 
