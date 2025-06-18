@@ -1,6 +1,6 @@
 :root {
   --primary-color-normal: #820AD1;
-  --primary-color-hovered: #490B75;
+  --primary-color-hovered: #9436E1;
   --secondary-color: #222;
   --light-color: #f0f0f0;
   --white-color: #fff;
@@ -76,4 +76,51 @@ body {
   font-size: 1rem;
   color: var(--secondary-color);
   margin-top: 0.25rem;
+}
+
+.sidebar {
+  background: var(--white-color);
+  border-right: 1px solid var(--border-color);
+  min-width: 200px;
+  z-index: 1020;
+}
+
+.sidebar-link {
+  color: var(--secondary-color);
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.sidebar-link:hover,
+.sidebar-link:focus {
+  color: var(--primary-color-normal);
+  background: var(--light-color);
+  text-decoration: none;
+}
+
+.sidebar-link.active {
+  color: var(--light-color);
+  background: var(--primary-color-normal);
+  text-decoration: none;
+}
+
+.sidebar-link.active:hover {
+  color: var(--light-color);
+  background: var(--primary-color-hovered);
+  text-decoration: none;
+}
+
+.main-content {
+  background: transparent;
+  min-height: 80vh;
+}
+
+@media (max-width: 991.98px) {
+  .sidebar {
+    min-width: 160px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
 }
